@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+    <body>
+
+        <form>
+            <h2>Complete los campos</h2>
+
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" type="texto" placeholder="Ej: Nicolas"> <!--id es para darle un nombre a la etiqueta y en for se pone lo mismo que en id, asi asociamos label con input.-->
+            </div> <!--for indica a que input va hacer referencia-->
+            
+            <div>
+                <label for="superheroe">Super Heroe Favorito: </label>
+                <select id="superheroe">
+                    <option>Superman</option>
+                    <option>Capitan America</option>
+                    <option>Batman</option>
+                    <option>Superchica</option>
+                </select>
+            </div>
+
+            <div>
+                <label>¿Te gusta Harry Potter?</label>
+                <input name="harrypotter" type="radio" id="si" checked>
+                <label for="si">Si</label>
+                <input name="harrypotter" type="radio" id="no">
+                <label for="no">No</label>
+                <!--Para que me haga elegir uno uso el name="harrypotter" en ambos inputs-->
+                <!--Con checked dejo al Si como preseleccionado, sin checked ninguno esta preseleccionado-->
+            </div>
+
+            <div>
+                <label for="descripcion">Describi como te sentis</label>
+                <br>
+                <textarea id="descripcion" cols="30" rows="10"></textarea>
+            </div>
+            
+            <input type="submit" value="Enviar"> <!--Es lo mismo que <button>Enviar</button>-->
+        </form>
+
+    </body>
+</html>
